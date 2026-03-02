@@ -1,0 +1,38 @@
+{
+  "author": "paras@getbindu.com",
+  "name": "System-Architect-Advisor-Agent",
+  "description": "AI System Architect Advisor is an AI-powered system design assistant that transforms natural language project requirements into structured architecture recommendations, infrastructure planning, security strategies, and compliance considerations. It leverages a multi-model reasoning pipeline to generate schema-driven technical analysis, detailed implementation roadmaps, and well-formatted technical documentation through an interactive chat interface.",
+  "version": "1.0.0",
+  "recreate_keys": false,
+  "skills": [
+    "skills/System-Architect-Advisor"
+  ],
+  "capabilities": {},
+  "agent_trust": "low",
+  "debug_mode": true,
+  "debug_level": 2,
+  "deployment": {
+    "url": "http://127.0.0.1:3773",
+    "expose": true,
+    "protocol_version": "1.0.0",
+    "proxy_urls": [
+      "127.0.0.1"
+    ],
+    "cors_origins": [
+      "*"
+    ]
+  },
+  "num_history_sessions": 5,
+  "environment_variables": [
+    {
+      "key": "OPENROUTER_API_KEY",
+      "description": "OpenRouter API key for LLM calls",
+      "required": true
+    },
+    {
+      "key": "MEM0_API_KEY",
+      "description": "Mem0 API key for memory operations",
+      "required": false
+    }
+  ]
+}

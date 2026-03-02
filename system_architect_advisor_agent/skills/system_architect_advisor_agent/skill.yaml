@@ -1,0 +1,172 @@
+# System Architect Advisor Skill
+# AI-powered system design and architecture planning assistant
+
+# Basic Metadata
+id: system-architect-advisor-agent-v1
+name: system-architect-advisor-agent
+version: 1.0.0
+author: paras@getbindu.com
+
+# Description
+description: |
+  AI System Architect Advisor is an intelligent system design assistant that transforms natural language
+  project requirements into structured architecture recommendations, infrastructure planning, security strategies,
+  and compliance considerations. It leverages multi-model reasoning to generate schema-driven technical analysis,
+  detailed implementation roadmaps, and well-formatted technical documentation.
+
+# Tags and Modes
+tags:
+  - system-architecture
+  - technical-design
+  - infrastructure-planning
+  - security-strategy
+  - compliance
+  - implementation-roadmap
+  - technical-documentation
+  - software-architecture
+
+input_modes:
+  - text/plain
+  - application/json
+
+output_modes:
+  - text/plain
+  - application/json
+  - text/markdown
+
+# Example Queries
+examples:
+  - "Design a microservices architecture for an e-commerce platform handling 1M users"
+  - "Create a system design for a real-time chat application with video calling"
+  - "Plan the infrastructure for a fintech payment processing system"
+  - "Design a scalable architecture for a social media analytics platform"
+  - "Create a technical roadmap for migrating a monolith to microservices"
+
+# Detailed Capabilities
+capabilities_detail:
+  architecture_design:
+    supported: true
+    patterns:
+      - microservices
+      - serverless
+      - event_driven
+      - cqrs
+      - domain_driven_design
+    considerations:
+      - scalability
+      - performance
+      - reliability
+      - maintainability
+  infrastructure_planning:
+    supported: true
+    cloud_providers:
+      - aws
+      - azure
+      - gcp
+      - multi_cloud
+    services:
+      - compute
+      - storage
+      - networking
+      - databases
+      - cdn
+  security_strategy:
+    supported: true
+    areas:
+      - authentication
+      - authorization
+      - data_encryption
+      - network_security
+      - compliance_standards
+  compliance_considerations:
+    supported: true
+    standards:
+      - gdpr
+      - hipaa
+      - pci_dss
+      - soc2
+      - iso27001
+
+# Performance Metrics
+performance:
+  average_processing_time: "~30-45 seconds"
+  max_concurrent_requests: 10
+  memory_per_request: "~512MB"
+  supported_project_sizes:
+    - small_startup
+    - medium_enterprise
+    - large_scale_systems
+
+# Technical Expertise
+technical_expertise:
+  programming_languages:
+    - python
+    - javascript
+    - java
+    - go
+    - rust
+    - typescript
+  databases:
+    - relational_sql
+    - nosql
+    - graph_databases
+    - time_series
+    - search_engines
+  devops_tools:
+    - docker
+    - kubernetes
+    - jenkins
+    - gitlab_ci
+    - github_actions
+  monitoring:
+    - prometheus
+    - grafana
+    - elk_stack
+    - datadog
+    - new_relic
+
+# Use Cases
+use_cases:
+  primary:
+    - "Startup architecture planning and MVP design"
+    - "Enterprise system modernization and migration"
+    - "Technical due diligence and architecture reviews"
+    - "Implementation roadmap creation"
+  secondary:
+    - "Team technical training and guidance"
+    - "Vendor technology evaluation"
+    - "Cost optimization analysis"
+    - "Risk assessment and mitigation"
+
+# Deliverables
+deliverables:
+  architecture_diagrams:
+    - system_overview
+    - component_interactions
+    - data_flow
+    - deployment_topology
+  technical_documents:
+    - architecture_decisions
+    - api_specifications
+    - security_guidelines
+    - deployment_strategies
+  implementation_plans:
+    - phased_roadmap
+    - resource_requirements
+    - timeline_estimates
+    - risk_mitigation
+
+# Limitations
+limitations:
+  - "Provides recommendations, not actual implementation"
+  - "Requires clear and detailed requirements"
+  - "Cannot access proprietary internal systems"
+  - "Recommendations based on general best practices"
+
+# Best Practices
+best_practices:
+  - "Provide detailed business requirements and constraints"
+  - "Specify expected scale and performance requirements"
+  - "Include budget and timeline constraints"
+  - "Mention existing technology stack and preferences"
+  - "Define compliance and regulatory requirements"

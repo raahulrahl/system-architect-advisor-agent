@@ -1,0 +1,52 @@
+site_name: System-Architect-Advisor-Agent
+repo_url: https://github.com/Paraschamoli/System-Architect-Advisor-Agent
+site_url: https://Paraschamoli.github.io/System-Architect-Advisor-Agent
+site_description: AI System Architect Advisor is an AI-powered system design assistant that transforms natural language project requirements into structured architecture recommendations, infrastructure planning, security strategies, and compliance considerations. It leverages a multi-model reasoning pipeline to generate schema-driven technical analysis, detailed implementation roadmaps, and well-formatted technical documentation through an interactive chat interface.
+site_author: Paras Chamoli
+edit_uri: edit/main/docs/
+repo_name: Paraschamoli/System-Architect-Advisor-Agent
+copyright: Maintained by <a href="https://Paraschamoli.com">Paraschamoli</a>.
+
+nav:
+  - Home: index.md
+  - Modules: modules.md
+plugins:
+  - search
+  - mkdocstrings:
+      handlers:
+        python:
+          paths: ["src/system_architect_advisor_agent"]
+theme:
+  name: material
+  feature:
+    tabs: true
+  palette:
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: white
+      accent: deep orange
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: black
+      accent: deep orange
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  icon:
+    repo: fontawesome/brands/github
+
+extra:
+  social:
+    - icon: fontawesome/brands/github
+      link: https://github.com/Paraschamoli/System-Architect-Advisor-Agent
+    - icon: fontawesome/brands/python
+      link: https://pypi.org/project/System-Architect-Advisor-Agent
+
+markdown_extensions:
+  - toc:
+      permalink: true
+  - pymdownx.arithmatex:
+      generic: true
